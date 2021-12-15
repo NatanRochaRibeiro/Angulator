@@ -1,0 +1,81 @@
+/* FOLHA DE ESTILO DA PÁGINA */
+h1{
+    margin-top: 0px;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+/* CORPO DA CALCULADORA */
+.calculator{
+    width: 400px;
+    position: relative;
+	background-color: #17a8bb;
+	margin: 7% auto auto auto;
+	text-align: center;
+    border-color: rgb(99, 94, 97);
+    border-radius: 30px;
+    box-shadow: inset 2px 0 10px -5px rgb(85, 80, 83),
+                inset -5px 0 15px -5px rgb(85, 80, 83),
+                inset 10px 0px 10px -12px rgb(85, 80, 83),
+                inset -2px 0 4px 2px rgb(85, 80, 83),
+                inset -2px 0px 10px 0px rgb(85, 80, 83);
+}
+
+/* TELA DE RESULTADOS */
+.result{
+border-radius: 8px;
+}
+
+/* CONFIGURAÇÕES DOS BOTÕES */
+button{
+    border-radius: 8px;
+    width: 80px;
+    height: 65px;
+    font-size: 20px;
+    border: 2px solid;
+    border-color: rgb(87, 85, 85);
+    margin: 2px 2px 8px 2px;
+    transition-duration: 0.4s;
+    box-shadow: inset 5px 0 15px -5px rgb(199, 192, 182),
+                inset -3px 0 15px -5px rgb(199, 192, 182),
+                inset 0px -5px 0px -3px rgb(199, 192, 182),
+                inset 0 0 2px 2px rgb(199, 192, 182),
+                inset 0 5px 15px 0 rgb(199, 192, 182);
+}
+/* == */
+.responsiveLong{
+    border-radius: 8px;
+    width: 170px;
+
+}
+
+.responsiveEnter{
+    background-color: rgb(138, 134, 134);
+    color: rgb(247, 240, 240);
+    box-shadow: inset 5px 0 15px -5px rgb(199, 192, 182),
+                inset -3px 0 15px -5px rgb(199, 192, 182),
+                inset 0px -5px 0px -3px rgb(199, 192, 182),
+                inset 0 0 2px 2px rgb(199, 192, 182),
+                inset 0 5px 15px 0 rgb(199, 192, 182), 
+}
+
+/* == */
+.responsive:hover{
+    background-color: rgb(138, 134, 134);
+    color: rgb(247, 240, 240);
+    box-shadow: inset 5px 0 15px -5px rgb(199, 192, 182),
+                inset -3px 0 15px -5px rgb(199, 192, 182),
+                inset 0px -5px 0px -3px rgb(199, 192, 182),
+                inset 0 0 2px 2px rgb(199, 192, 182),
+                inset 0 5px 15px 0 rgb(199, 192, 182),           
+}
+
+
+/* CONFIGURAÇÃO TEXTUAL DO INPUT */
+    input{
+    width: 350px;
+    height: 60px;
+    text-align: right;
+    font-size: 1.7em;
+}

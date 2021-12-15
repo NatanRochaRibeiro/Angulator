@@ -1,0 +1,38 @@
+<div class="calculator">
+    <h1>ANGULATOR APP</h1>
+    <!-- 1ª DIV CONTAINER DO INPUT -->
+    <div>
+       <form>
+        <input
+        id="myBtn"
+        placeholder="0"
+        class="result" 
+        type="text" 
+        randonly value="{{ result }}"
+        value="Submit"
+        />
+        </form>
+    <!-- SCRIPT.JS USADO PARA TENTAR VALIDAR AS OPERAÇÕES USANDO O BOTÃO "ENTER" -->
+        <script>
+            var input = document.getElementById("myInput");
+            input.addEventListener("keyup", function(event) {
+             if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("myBtn").click();
+            }
+        });
+        </script>
+    </div>
+    <div>
+        <!-- 2ª DIV USADA PARA OS BOTÕES INTERATIVOS DA CALCULADORA, SENDO: BOTÕES GRANDES E PEQUENOS-->
+        <button class="responsiveLong" *ngFor="let longButtons of longButtons" (click)="addToExpression(longButtons)">
+            {{ longButtons }}
+        <!-- USADO A DIRETIVA *NGFOR PARA PERCORRER O ARRAY PARA EXIBIR OS ELEMENTOS -->
+        </button>
+        <button class="responsive" *ngFor="let button of button" (click)="addToExpression(button)">
+            {{ button }}
+        </button>
+        
+    </div>
+</div>    
+
